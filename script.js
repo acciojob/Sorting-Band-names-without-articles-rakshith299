@@ -6,8 +6,6 @@ let withoutArticles = [];
 
 for(let x in touristSpots){
 	let cur = touristSpots[x];
-    //console.log(cur);
-
     
     let lo = cur.toLocaleLowerCase();
 
@@ -20,8 +18,6 @@ for(let x in touristSpots){
     }
 }
 
-console.log(articleIndex);
-console.log(withoutArticles);
 
 withoutArticles.sort();
 
@@ -29,7 +25,7 @@ for(let x of articleIndex){
     withoutArticles.push(touristSpots[x]);
 }
 
-console.log(withoutArticles);
+
 let unorderedList = document.getElementById("band");
 
 for(let i = 0; i < withoutArticles.length; i++){
